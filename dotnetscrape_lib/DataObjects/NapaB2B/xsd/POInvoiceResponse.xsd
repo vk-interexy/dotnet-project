@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="POInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StoreID" type="xs:unsignedInt" />
+        <xs:element name="PONumber" type="xs:unsignedInt" />
+        <xs:element name="POInvoice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceNumber" type="xs:unsignedInt" />
+              <xs:element name="InvoiceTotal" type="xs:decimal" />
+              <xs:element name="InvoiceDate" type="xs:unsignedInt" />
+              <xs:element name="InvoiceTime" type="xs:unsignedShort" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="StatusCode" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

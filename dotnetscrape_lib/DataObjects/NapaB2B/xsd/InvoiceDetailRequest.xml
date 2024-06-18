@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InvoiceDetailRequest>
+  <StoreID>700001996</StoreID>
+  <AccountPassword>D01313RIM</AccountPassword>
+  <InvoiceNumber>925008</InvoiceNumber>
+</InvoiceDetailRequest>

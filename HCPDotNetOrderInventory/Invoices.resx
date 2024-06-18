@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Data" xml:space="preserve">
+    <value>&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398176&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;44.10&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050420&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;1739&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;6&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;44.10&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1009&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;3422&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;7.350&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398182&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;29.40&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0715&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;29.40&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1010&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;3422&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;4.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;7.350&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398181&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;29.40&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0714&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;29.40&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1011&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;3422&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;4.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;7.350&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398183&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;360.00&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0721&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;360.00&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1016&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;72.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;M  &lt;/LineAbbrev&gt;
+    &lt;InvoiceMessageLine&gt;Qty: 72  from: CHA - CHARLOTTE, NC&lt;/InvoiceMessageLine&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398177&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;320.00&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0626&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;320.00&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1017&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;15.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;M  &lt;/LineAbbrev&gt;
+    &lt;InvoiceMessageLine&gt;Qty: 72  from: CHA - CHARLOTTE, NC&lt;/InvoiceMessageLine&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;49.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398220&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;5.68&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;1031&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;5.68&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1118&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;FIL&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;1515&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.080&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;MMM&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;33391&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.600&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398219&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;5.68&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;1031&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;5.68&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1119&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;FIL&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;1515&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.080&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;MMM&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;33391&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.600&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398036&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;11.40&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050420&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0712&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;11.40&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1124&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;M  &lt;/LineAbbrev&gt;
+    &lt;InvoiceMessageLine&gt;Qty: 12  from: CHA - CHARLOTTE, NC&lt;/InvoiceMessageLine&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;8.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398209&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;128.87&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0955&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;128.87&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1125&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;UC102&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.490&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;HWP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.890&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;7.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;FP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.990&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF128&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;36.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398227&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;128.87&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;1048&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;128.87&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1126&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;UC102&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.490&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;HWP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.890&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;7.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;FP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.990&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF128&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;36.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398228&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;128.87&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;1050&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;128.87&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1127&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;UC102&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.490&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;HWP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.890&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;7.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;FP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.990&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF128&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;36.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398035&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;128.87&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050420&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0710&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;128.87&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1128&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;UC102&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.490&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;UC102&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;4.490&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;M  &lt;/LineAbbrev&gt;
+    &lt;InvoiceMessageLine&gt;Qty: 1  from: CHA - CHARLOTTE, NC&lt;/InvoiceMessageLine&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;HWP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.890&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;AC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;CR43TS&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;7.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;1.140&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;FP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.990&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DC &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;FP101&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;3.990&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;M  &lt;/LineAbbrev&gt;
+    &lt;InvoiceMessageLine&gt;Qty: 1  from: CHA - CHARLOTTE, NC&lt;/InvoiceMessageLine&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF128&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;1.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;36.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;SF &lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;SF16&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;6.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;5.000&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398184&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;4.04&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0725&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;4.04&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt;tro&lt;/Attention&gt;
+  &lt;PONumber&gt;1132&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398179&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;4.04&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0627&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;4.04&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1134&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;
+#########
+&lt;?xml version="1.0"?&gt;
+&lt;InvoiceDetailResponse StatusCode="0"&gt;
+  &lt;StoreID&gt;600006011&lt;/StoreID&gt;
+  &lt;TransactionType&gt;CHG&lt;/TransactionType&gt;
+  &lt;InvoiceNumber&gt;398178&lt;/InvoiceNumber&gt;
+  &lt;InvoiceTotal&gt;4.04&lt;/InvoiceTotal&gt;
+  &lt;InvoiceDate&gt;050520&lt;/InvoiceDate&gt;
+  &lt;InvoiceTime&gt;0627&lt;/InvoiceTime&gt;
+  &lt;CounterPersonID&gt;112&lt;/CounterPersonID&gt;
+  &lt;SalesPersonID&gt;17&lt;/SalesPersonID&gt;
+  &lt;OtherCharges&gt;0.00&lt;/OtherCharges&gt;
+  &lt;NonTaxableTotal&gt;4.04&lt;/NonTaxableTotal&gt;
+  &lt;TaxableTotal&gt;0.00&lt;/TaxableTotal&gt;
+  &lt;Tax1Total&gt;0.00&lt;/Tax1Total&gt;
+  &lt;Tax2Total&gt;0.00&lt;/Tax2Total&gt;
+  &lt;Attention&gt; &lt;/Attention&gt;
+  &lt;PONumber&gt;1135&lt;/PONumber&gt;
+  &lt;InvoiceDetailLine&gt;
+    &lt;LineAbbrev&gt;DEN&lt;/LineAbbrev&gt;
+    &lt;PartNumber&gt;4504&lt;/PartNumber&gt;
+    &lt;QtyBilled&gt;2.00&lt;/QtyBilled&gt;
+    &lt;Taxed&gt; &lt;/Taxed&gt;
+    &lt;UnitPrice&gt;2.020&lt;/UnitPrice&gt;
+  &lt;/InvoiceDetailLine&gt;
+&lt;/InvoiceDetailResponse&gt;</value>
+  </data>
+</root>

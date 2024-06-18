@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PartOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StoreID" type="xs:unsignedInt" />
+        <xs:element name="AccountPassword" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="PartOrderIn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LineAbbrev" type="xs:string" />
+              <xs:element name="PartNumber" type="xs:string" />
+              <xs:element name="OrderQty" type="xs:unsignedByte" />
+              <xs:element name="PartMessage" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PONumber" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

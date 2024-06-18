@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GenerateFullOutput": {
+      "commandName": "Project",
+      "commandLineArgs": "\"E:\\DOTNETScrapeData\\Cat_SubCat_Full_09_09_2018\\jsonFull\" \"E:\\DOTNETScrapeData\\processing\\Detailmi.aspx\" \"E:\\DOTNETScrapeData\\output\""
+    }
+  }
+}

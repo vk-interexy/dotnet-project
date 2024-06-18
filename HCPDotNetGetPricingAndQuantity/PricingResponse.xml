@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<PriceAvailabilityResponse StatusCode="0" StatusMessage="HelloWorld">
+  <StoreID>700001996</StoreID>
+  <PartPriceAvailability>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>1515</PartNumber>
+    <TAMSErrorMsg></TAMSErrorMsg>
+    <QtyOnHand>3.00</QtyOnHand>
+    <Price>
+      <PriceType>PRI</PriceType>
+      <ListPrice>12.02</ListPrice>
+      <YourCost>6.69</YourCost>
+    </Price>
+    <DCBalanceQty>32</DCBalanceQty>
+    <DeliveryTime>240 minutes</DeliveryTime>
+    <PartDescription>DOTNETGOLD OIL FILTER</PartDescription>
+  </PartPriceAvailability>
+  <PartPriceAvailability>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>1516</PartNumber>
+    <TAMSErrorMsg></TAMSErrorMsg>
+    <QtyOnHand>3.00</QtyOnHand>
+    <Price>
+      <PriceType>PRI</PriceType>
+      <!--<ListPrice>12.02</ListPrice>
+      <YourCost>6.69</YourCost>-->
+    </Price>
+    <!--<DCBalanceQty>67</DCBalanceQty>-->
+    <DeliveryTime>240 minutes</DeliveryTime>
+    <PartDescription>DOTNETGOLD OIL FILTER</PartDescription>
+  </PartPriceAvailability>
+</PriceAvailabilityResponse>

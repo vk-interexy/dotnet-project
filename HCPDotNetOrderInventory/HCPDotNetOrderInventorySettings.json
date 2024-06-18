@@ -1,0 +1,19 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "connectionstring": "server=localhost;user id=root;password=;persistsecurityinfo=False;database=dotnet",
+  "dotnetB2BApiUrl": "http://gateway.dotnetprolink.com/b2bBridgetest?request=xml&service=POSServiceI&SDK=HCP_Custom",
+  "storeId": 1,
+  "accountPassword": "",
+  "primaryDistributionCenter": "Primary DC",
+  "runOneTimeInsertOfPartPurchase":  false,
+  "logLevel": "DEBUG",
+  "chunkSize": 50
+
+}

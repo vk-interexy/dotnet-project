@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<PriceAvailabilityRequest>
+<StoreID>700001996</StoreID>
+<AccountPassword>D01313RIM</AccountPassword>
+<Part>
+<LineAbbrev>NR</LineAbbrev>
+<PartNumber>2703</PartNumber>
+</Part>
+<Part>
+<LineAbbrev>BRG</LineAbbrev>
+<PartNumber>LM48548VP</PartNumber>
+</Part>
+<Part>
+<LineAbbrev>BRG</LineAbbrev>
+<PartNumber>BR3</PartNumber>
+</Part>
+<Part>
+<LineAbbrev>ND</LineAbbrev>
+
+4/20/2018 1:04 PM Page 22 of 32
+
+<PartNumber>4401662</PartNumber>
+</Part>
+<Part>
+<LineAbbrev>TS</LineAbbrev>
+<PartNumber>TS473</PartNumber>
+</Part>
+</PriceAvailabilityRequest>

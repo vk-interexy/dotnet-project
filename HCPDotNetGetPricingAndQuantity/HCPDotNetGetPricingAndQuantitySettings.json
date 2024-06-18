@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "connectionstring": "server=localhost;user id=root;password=;persistsecurityinfo=False;database=dotnet",
+  "dotnetB2BApiUrl": "http://gateway.dotnetprolink.com/b2bBridge?request=xml&service=POSServiceI&SDK=HCP_Custom",
+  "storeId": "",
+  "accountPassword": "",
+  "primaryDistributionCenter": "Primary DC",
+  "logLevel": "DEBUG",
+  "chunkSize": 50,
+  "quantityPricingUpdatedDateFieldOnly": false,
+  "retrievePricingForOnlyUnsetQuantityPricingUpdatedDate": false,
+  "sortAscOrDesc": true
+}

@@ -1,0 +1,23 @@
+﻿<PartOrderRequest>
+  <StoreID>700001996</StoreID>
+  <AccountPassword>D01313RIM</AccountPassword>
+  <PartOrderIn>
+    <LineAbbrev>NOE</LineAbbrev>
+    <PartNumber>6412139</PartNumber>
+    <OrderQty>1</OrderQty>
+    <PartMessage/>
+  </PartOrderIn>
+  <PartOrderIn>
+    <LineAbbrev/>
+    <PartNumber/>
+    <OrderQty>1</OrderQty>
+    <PartMessage>Attn: John Smith</PartMessage>
+  </PartOrderIn>
+  <PartOrderIn>
+    <LineAbbrev/>
+    <PartNumber/>
+    <OrderQty>1</OrderQty>
+    <PartMessage>WO: AAA-2954</PartMessage>
+  </PartOrderIn>
+  <PONumber>282367</PONumber>
+</PartOrderRequest>

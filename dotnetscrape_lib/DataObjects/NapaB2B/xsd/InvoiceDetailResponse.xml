@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InvoiceDetailResponse StatusCode="0">
+  <StoreID>700001996</StoreID>
+  <TransactionType>CHG</TransactionType>
+  <InvoiceNumber>925008</InvoiceNumber>
+  <InvoiceTotal>226.53</InvoiceTotal>
+  <InvoiceDate>110404</InvoiceDate>
+  <InvoiceTime>0458</InvoiceTime>
+  <CounterPersonID>6</CounterPersonID>
+  <SalesPersonID>19</SalesPersonID>
+  <OtherCharges>0.00</OtherCharges>
+  <NonTaxableTotal></NonTaxableTotal>
+  4/20/2018 1:04 PM Page 20 of 32
+  <TaxableTotal></TaxableTotal>
+  <Tax1Total></Tax1Total>
+  <Tax2Total></Tax2Total>
+  <Attention></Attention>
+  <PONumber> 196589</PONumber>
+  <InvoiceDetailLine>
+    <LineAbbrev>BA </LineAbbrev>
+    <PartNumber>0821563</PartNumber>
+    <QtyBilled>1.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>40.500</UnitPrice>
+  </InvoiceDetailLine>
+  <InvoiceDetailLine>
+    <LineAbbrev>VAL</LineAbbrev>
+    <PartNumber>935</PartNumber>
+    <QtyBilled>6.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>4.390</UnitPrice>
+  </InvoiceDetailLine>
+  <InvoiceDetailLine>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>1223</PartNumber>
+    <QtyBilled>1.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>7.440</UnitPrice>
+  </InvoiceDetailLine>
+  <InvoiceDetailLine>
+    <LineAbbrev>BA </LineAbbrev>
+    <PartNumber>0832550</PartNumber>
+    <QtyBilled>2.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>64.410</UnitPrice>
+  </InvoiceDetailLine>
+  <InvoiceDetailLine>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>6320</PartNumber>
+    <QtyBilled>1.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>13.460</UnitPrice>
+  </InvoiceDetailLine>
+  <InvoiceDetailLine>
+    <LineAbbrev>CMM</LineAbbrev>
+    <PartNumber>BLACK</PartNumber>
+    <QtyBilled>1.00</QtyBilled>
+    <Taxed> </Taxed>
+    <UnitPrice>9.970</UnitPrice>
+  </InvoiceDetailLine>
+</InvoiceDetailResponse>

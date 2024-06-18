@@ -1,0 +1,115 @@
+﻿/// <summary>Performs optionally-whitespace-padded string search without new string allocations.</summary>
+/// <remarks>A regex might also work, but constructing a new regex every time this method is called would be expensive.</remarks>
+private static Boolean CheapClassListContains(String haystack, String needle, StringComparison comparison)
+{
+    if (String.Equals(haystack, needle, comparison)) return true;
+    Int32 idx = 0;
+    while (idx + needle.Length <= haystack.Length)
+    {
+        idx = haystack.IndexOf(needle, idx, comparison);
+        if (idx == -1) return false;
+
+        Int32 end = idx + needle.Length;
+
+        // Needle must be enclosed in whitespace or be at the start/end of string
+        Boolean validStart = idx == 0 || Char.IsWhiteSpace(haystack[idx - 1]);
+        Boolean validEnd = end == haystack.Length || Char.IsWhiteSpace(haystack[end]);
+        if (validStart && validEnd)
+            return true;
+
+        idx++;
+    }
+    return false;
+}
+
+
+	//using (var response = GenerateSearchPost())
+        //{
+        //    Console.WriteLine(response.StatusDescription);
+
+        //    using (var dataStream = response.GetResponseStream())
+        //    {
+        //        using (var reader = new StreamReader(dataStream))
+        //        {
+        //            searchString = Regex.Unescape(reader.ReadToEnd());
+        //        }
+        //    }
+        //}
+        //{"d":"?Ntt=&N=0&SearchType=1"}
+        //{\"d\":\"?Ntt=&N=0&SearchType=1\"}
+        //var searchStrings = new List<string>() { Regex.Unescape(searchString) };
+
+
+		private static IEnumerable<HtmlNode> GetElementsWithClass(HtmlDocument doc, String className)
+{
+
+    Regex regex = new Regex("\\b" + Regex.Escape(className) + "\\b", RegexOptions.Compiled);
+    return doc
+        .DocumentNode.Descendants()
+        .Where(n => n.NodeType == HtmlNodeType.Element)
+        .Where(e => e.Name == "td" && regex.IsMatch(e.GetAttributeValue("class", "")));
+
+
+    // &&
+    //CheapClassListContains(
+    //    e.GetAttributeValue("class", ""),
+    //    className,
+    //    StringComparison.Ordinal)
+
+    //    return doc
+    //.DocumentNode.Descendants()
+    //.Where(n => n.NodeType == HtmlNodeType.Element)
+    //.Where(e =>
+    //   e.Name == "td" 
+    //);
+}
+
+
+static HttpWebResponse GenerateSearchPost()
+{
+    const string postData = @"{""quickSearch"": """", ""partNumber"": """", ""isDotNetPart"": ""0"", ""vinNumber"": """", ""isVehicleApplication"": ""false"", ""categoryMain"": """", ""subCategoryMain"": """", ""categoryMainDescr"": """", ""subCategoryMainDescr"": """", ""partType"": """", ""partTypeDescr"": """"}";
+    byte[] byteArray = Encoding.UTF8.GetBytes(postData);
+    Uri target = new Uri("https://www.dotnetprolink.com");
+    var req = WebRequest.Create("https://www.dotnetprolink.com/services/shoppingservice.asmx/Search");
+    req.Method = "POST";
+           
+
+    var http = (req as HttpWebRequest);
+    //Client Headers
+    http.Headers.Clear();
+    http.Accept = "application/json, text/javascript, */*; q=0.01";
+    http.Headers.Add(HttpRequestHeader.AcceptEncoding, "gzip, deflate, br");
+    http.Headers.Add(HttpRequestHeader.AcceptLanguage, "en-US,en;q=0.9");
+    http.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36";
+    http.Headers.Add("X-Requested-With", "XMLHttpRequest");
+
+    //Cookies
+    http.CookieContainer = new CookieContainer();
+    http.CookieContainer.Add(new Cookie("ASP.NET_SessionId", "lc3faf41qb3yx5ioqfqubdn4") { Domain = target.Host });
+    http.CookieContainer.Add(new Cookie("PROLink_RememberMe", "1") { Domain = target.Host });
+    http.CookieContainer.Add(new Cookie(".ASPXAUTH", "AEB381A76E0B1F460D69B07E5784BA9489475A2E39E66A738F532CD78056E49B58A433A3B003EA0DC58488A865DF8C8B4453ECA2CDB47234DE7FB772CDF23B18E22F2D87AF14E372DF98D46A03C1EE8CD1B957FA2CA638C3D8D21B91C89F253A6FE32E5D735C92B1A8B3BA800836B012B62895866E959A7AB0C3C60B56C09070E10B55D4") { Domain = target.Host });
+    http.CookieContainer.Add(new Cookie("TS0157da8d", "0189ec632707b5d52be8815efe87299df64935e719db0c11edcb9b482e942297f5de8f089ee22b09f8d30e96cc0ccf95f55fb6976f0c04ae84c491213ebaec06d4a2ef5291b8418225c4fa4d9ee025a037c1be2ded9cf592fc496e0842b01ce9bf87d78096") { Domain = target.Host });
+
+    //Entity
+    req.ContentLength = byteArray.Length;
+    req.ContentType = "application/json; charset=UTF-8";
+
+    //Miscellaneous
+    http.Referer = "https://www.dotnetprolink.com/default.aspx";
+           
+
+    //Security
+    http.Headers.Add("Origin", "https://www.dotnetprolink.com");
+
+    //Transport
+    http.KeepAlive = true;
+            
+    http.Host = "www.dotnetprolink.com";
+            
+
+    using (var dataStream = http.GetRequestStream())
+    {
+        dataStream.Write(byteArray, 0, byteArray.Length);
+    }
+    return http.GetResponse() as HttpWebResponse;
+}

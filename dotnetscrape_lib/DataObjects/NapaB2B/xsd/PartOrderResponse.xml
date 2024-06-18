@@ -1,0 +1,25 @@
+﻿<PartOrderResponse StatusCode="0">
+  <StoreID>700001996</StoreID>
+  <PartOrderOut>
+    <LineAbbrev>NOE</LineAbbrev>
+    <PartNumber>6412139</PartNumber>
+    <TAMSErrorMsg></TAMSErrorMsg>
+    <QtyOnHand>4.00</QtyOnHand>
+    <Price>
+      <PriceType>PRI</PriceType>
+      <ListPrice>2.69</ListPrice>
+      <YourCost>2.27</YourCost>
+    </Price>
+  </PartOrderOut>
+  <PartOrderOut>
+    <LineAbbrev>NOE</LineAbbrev>
+    <PartNumber>6412138</PartNumber>
+    <TAMSErrorMsg></TAMSErrorMsg>
+    <QtyOnHand>5.00</QtyOnHand>
+    <Price>
+      <PriceType>PRI</PriceType>
+      <ListPrice>3.69</ListPrice>
+      <YourCost>3.27</YourCost>
+    </Price>
+  </PartOrderOut>
+</PartOrderResponse>

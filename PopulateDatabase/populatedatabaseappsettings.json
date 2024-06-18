@@ -1,0 +1,13 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "connectionstring": "server=localhost;user id=root;password=;persistsecurityinfo=False;database=dotnet",
+  "jsonDataPath": "E:\\DOTNETScrapeData\\output\\2018-10-30_20+51+35\\json",
+  "logLevel": "INFO"
+}

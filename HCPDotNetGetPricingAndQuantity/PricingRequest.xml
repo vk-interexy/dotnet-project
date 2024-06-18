@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" ?>
+<PriceAvailabilityRequest RequestID="MISCHG">
+  <StoreID>700001996</StoreID>
+  <AccountPassword>D01313RIM</AccountPassword>
+  <Part>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>1515</PartNumber>
+    <PartMessage>DCQTY</PartMessage>
+  </Part>
+  <Part>
+    <LineAbbrev>FIL</LineAbbrev>
+    <PartNumber>1516</PartNumber>
+    <PartMessage>DCQTY</PartMessage>
+  </Part>
+</PriceAvailabilityRequest>

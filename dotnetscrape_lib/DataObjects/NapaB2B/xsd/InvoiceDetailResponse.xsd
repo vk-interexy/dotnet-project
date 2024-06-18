@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InvoiceDetailResponse">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="StoreID" type="xs:unsignedInt" />
+        <xs:element name="TransactionType" type="xs:string" />
+        <xs:element name="InvoiceNumber" type="xs:unsignedInt" />
+        <xs:element name="InvoiceTotal" type="xs:decimal" />
+        <xs:element name="InvoiceDate" type="xs:unsignedInt" />
+        <xs:element name="InvoiceTime" type="xs:unsignedShort" />
+        <xs:element name="CounterPersonID" type="xs:unsignedByte" />
+        <xs:element name="SalesPersonID" type="xs:unsignedByte" />
+        <xs:element name="OtherCharges" type="xs:decimal" />
+        <xs:element name="NonTaxableTotal" />
+        <xs:element name="TaxableTotal" />
+        <xs:element name="Tax1Total" />
+        <xs:element name="Tax2Total" />
+        <xs:element name="Attention" />
+        <xs:element name="PONumber" type="xs:unsignedInt" />
+        <xs:element maxOccurs="unbounded" name="InvoiceDetailLine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LineAbbrev" type="xs:string" />
+              <xs:element name="PartNumber" type="xs:string" />
+              <xs:element name="QtyBilled" type="xs:decimal" />
+              <xs:element name="Taxed" type="xs:string" />
+              <xs:element name="UnitPrice" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="StatusCode" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

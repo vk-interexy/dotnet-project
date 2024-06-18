@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PurgeDuplicateSearchResults": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\DOTNETScrapeData\\processing\\resultsmi.aspx"
+    }
+  }
+}

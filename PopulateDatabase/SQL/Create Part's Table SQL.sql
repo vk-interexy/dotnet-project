@@ -1,0 +1,22 @@
+﻿CREATE TABLE `parts` (
+  `PartsID` int(10) NOT NULL AUTO_INCREMENT,
+  `PartNumber` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Category` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `SubCategory` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `ObjectData` json NOT NULL,
+  `QuantityPricingUpdatedDate` datetime DEFAULT '2001-01-01 00:00:00',
+  `PartCompatibilityComplete` bit(1) DEFAULT b'0',
+  `Quantity` decimal(10,4) DEFAULT '0.0000',
+  `ListPrice` decimal(10,2) DEFAULT '0.00',
+  `Cost` decimal(10,2) DEFAULT '0.00',
+  `Core` decimal(10,2) DEFAULT '0.00',
+  `DCName` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `DCQuantity` decimal(10,2) DEFAULT '0.00',
+  `DeliveryTime` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`PartsID`),
+  KEY `ix_partsnumber` (`PartNumber`),
+  KEY `ix_category_subcategory` (`Category`,`SubCategory`),
+  KEY `ix_category` (`Category`),
+  KEY `ix_subcategory` (`SubCategory`),
+  KEY `ix_quantitypricingupdateddate` (`QuantityPricingUpdatedDate`)
+) ENGINE=InnoDB AUTO_INCREMENT=51463 DEFAULT CHARSET=latin1;

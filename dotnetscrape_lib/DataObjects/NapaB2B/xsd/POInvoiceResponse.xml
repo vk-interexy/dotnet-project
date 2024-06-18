@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<POInvoiceResponse StatusCode="0">
+  <StoreID>700001996</StoreID>
+  <PONumber>196589</PONumber>
+  <POInvoice>
+    <InvoiceNumber>925008</InvoiceNumber>
+    <InvoiceTotal>226.53</InvoiceTotal>
+    <InvoiceDate>110404</InvoiceDate>
+    <InvoiceTime>0458</InvoiceTime>
+  </POInvoice>
+</POInvoiceResponse>

@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActualOnHandCountSql" xml:space="preserve">
+    <value>Select IFNULL(SUM(IFNULL(availableQuantity,0)),0) as Quantity from sv_inventory where Sku =@sku</value>
+  </data>
+  <data name="AvailableQuantityFromSkuVaultBySkuSql" xml:space="preserve">
+    <value>Select IFNULL(SUM(IFNULL(availableQuantity,0)),0) as Quantity from sv_inventory where Sku = @sku;</value>
+  </data>
+  <data name="DeleteAllPartPurchasesWithOrderCountZeroSql" xml:space="preserve">
+    <value>DELETE FROM `dotnet`.`partpurchase` WHERE `OrderCount` = 0</value>
+  </data>
+  <data name="DeletePartPurchaseSql" xml:space="preserve">
+    <value>DELETE FROM `dotnet`.`partpurchase` WHERE `PartPurchaseId` = @partPurchaseId</value>
+  </data>
+  <data name="GetAllPartPurchasesSql" xml:space="preserve">
+    <value>Select 
+pp1.PartPurchaseId,
+pp1.PO_Number,
+pp1.PartNumber,
+pp1.OrderCount,
+pp1.OrderDateTime,
+pp1.OrderStatus,
+pp1.DotNetQtyOnHand,
+pp1.DotNetNetQtyOnHand,
+pp1.DotNetListPrice,
+pp1.DotNetYourCost,
+pp1.DotNetTAMSErrorMsg,
+pp1.Comments 
+from `dotnet`.`partpurchase` pp1 
+INNER JOIN
+(SELECT PO_Number, PartNumber, Count(1) 
+FROM `dotnet`.`partpurchase`
+GROUP BY PO_Number, PartNumber
+Having Count(1) &gt; 1) pp2 ON pp1.PO_Number = pp2.PO_Number and pp1.PartNumber = pp2.PartNumber
+order by pp1.PO_Number,pp1.PartNumber</value>
+  </data>
+  <data name="GetDistinctPONumbersByOrderStatusSql" xml:space="preserve">
+    <value>SELECT DISTINCT PO_Number from `dotnet`.`partpurchase` where OrderStatus = @orderStatus</value>
+  </data>
+  <data name="GetInvoiceSummaryIdByPoNumberAndInvoiceNumberSql" xml:space="preserve">
+    <value>Select InvoiceSummaryId from `dotnet`.`smp_invoicesummary`
+WHERE PO_Number = @po_Number AND InvoiceNumber = @invoiceNumber LIMIT 1</value>
+  </data>
+  <data name="GetInvoiceSummaryIdWithBlankInvoiceByPoNumberSql" xml:space="preserve">
+    <value>Select InvoiceSummaryId from `dotnet`.`smp_invoicesummary`
+WHERE PO_Number = @po_Number AND InvoiceNumber = 'NOINVOICE' LIMIT 1</value>
+  </data>
+  <data name="GetManualPurchaseOrdersByStatus" xml:space="preserve">
+    <value>SELECT * FROM `dotnet`.`smp_manualpurchaseorders` WHERE ProcessingStatus = @processingStatus;</value>
+  </data>
+  <data name="GetPartInventorySkuMetricQueryPredicate" xml:space="preserve">
+    <value>Select psim.*, p.PartNumber, p.AutoOrderEnabled, psm.PackageQuantity from `dotnet`.`partskuinventorymetrics` psim
+INNER JOIN `dotnet`.`partskumaster` psm ON psim.SKU = psm.SKU
+INNER JOIN `dotnet`.`parts` p ON psm.PartNumber = p.PartNumber </value>
+  </data>
+  <data name="GetPartInventoryTargetWithOrderCountOverrideSql" xml:space="preserve">
+    <value>SELECT pit.*,p.AutoOrderEnabled 
+FROM `dotnet`.`partinventorytarget` pit 
+INNER JOIN `dotnet`.`parts`p on pit.PartNumber = p.PartNumber 
+WHERE pit.OrderCountOverride &gt; 0</value>
+  </data>
+  <data name="GetPartPurchasesByPONumber" xml:space="preserve">
+    <value>Select PartPurchaseId,
+PO_Number,
+PartNumber,
+OrderCount,
+OrderDateTime,
+OrderStatus,
+DotNetQtyOnHand,
+DotNetNetQtyOnHand,
+DotNetListPrice,
+DotNetYourCost,
+DotNetTAMSErrorMsg,
+Comments
+from `dotnet`.`partpurchase` where PO_Number = @po_Number;</value>
+  </data>
+  <data name="GetPartReceivingIdByPoNumberAndPartNumberAndInoviceNumberSql" xml:space="preserve">
+    <value>Select PartRecevingId,ReceivingStatus from `dotnet`.`smp_partreceiving`
+WHERE PO_Number = @po_Number AND PartNumber = @partNumber AND InvoiceNumber = @invoiceNumber LIMIT 1</value>
+  </data>
+  <data name="GetPartReceivingIdWithBlankInvoiceByPoNumberAndPartNumberSql" xml:space="preserve">
+    <value>Select PartRecevingId from `dotnet`.`smp_partreceiving`
+WHERE PO_Number = @po_Number AND PartNumber = @partNumber AND InvoiceNumber = 'NOINVOICE' LIMIT 1</value>
+  </data>
+  <data name="InsertInvoiceSummarySql" xml:space="preserve">
+    <value>INSERT INTO `dotnet`.`smp_invoicesummary`
+(
+ StoreID, PO_Number, InvoiceNumber,
+ TransactionType, ErrorMsg, InvoiceTotal,
+ InvoiceDate, CounterPersonID, SalesPersonID,
+ OtherCharges, NonTaxableTotal, TaxableTotal,
+ Tax1Total, Tax2Total, AdjustmentTotal, Attention
+)
+VALUES
+(
+ @storeID, @po_Number, @invoiceNumber,
+ @transactionType, @errorMsg, @invoiceTotal,
+ @invoiceDate,  @counterPersonID, @salesPersonID,
+ @otherCharges, @nonTaxableTotal, @taxableTotal,
+ @tax1Total, @tax2Total, @adjustmentTotal, @attention
+);</value>
+  </data>
+  <data name="InsertPartPurchaseSql" xml:space="preserve">
+    <value>INSERT INTO `dotnet`.`partpurchase`
+(
+PO_Number,
+PartNumber,
+OrderCount,
+OrderDateTime,
+OrderStatus,
+DotNetQtyOnHand,
+DotNetNetQtyOnHand,
+DotNetPriceType,
+DotNetListPrice,
+DotNetYourCost,
+DotNetTAMSErrorMsg,
+Comments,
+OrderCountOverriden
+)
+VALUES
+(
+@po_Number,
+@partNumber,
+@orderCount,
+@orderDateTime,
+@orderStatus,
+@dotnetQtyOnHand,
+@dotnetNetQtyOnHand,
+@dotnetPriceType,
+@dotnetListPrice,
+@dotnetYourCost,
+@dotnetTAMSErrorMsg,
+@comments,
+@orderCountOverriden
+);</value>
+  </data>
+  <data name="InsertPartReceivingSql" xml:space="preserve">
+    <value>INSERT INTO `dotnet`.`smp_partreceiving`
+(
+ PO_Number, PartNumber, OrderCount, InvoiceNumber,
+ ReportedShippedcount, ActualReceivedCount, ReportVsActualDiff,
+ ReceivedDateTime, ReceivingStatus, ReceivingNotes,
+ UnitPrice, Taxed, InvoiceMsgLine
+)
+VALUES
+(
+ @po_Number, @partNumber, @orderCount, @invoiceNumber,
+ @reportedShippedcount, @actualReceivedCount, @reportVsActualDiff,
+ @receivedDateTime, @receivingStatus, @receivingNotes,
+ @unitPrice, @taxed, @invoiceMsgLine
+);</value>
+  </data>
+  <data name="OnOrderInTransitCountSql" xml:space="preserve">
+    <value>Select PartNumber,OrderStatus,IFNULL(SUM(IFNULL(OrderCount,0)),0) as OrderCount from dotnet.partpurchase
+WHERE OrderStatus in ('##OnOrder##','##InTransit##')
+GROUP BY PartNumber,OrderStatus;</value>
+  </data>
+  <data name="OrderCountBySkuAndSalesVelocityInDaysSql" xml:space="preserve">
+    <value>Select count(1) as Quantity from 
+(
+Select OrderNumber from dotnet.ss_orders where item1Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item2Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item3Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item4Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item5Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item6Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item7Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+union
+Select OrderNumber from dotnet.ss_orders where item8Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate) SkuOrderCountTable</value>
+  </data>
+  <data name="OrderQuantityBySkuAndSalesVelocityInDaysSql" xml:space="preserve">
+    <value>SELECT SUM(IFNULL(sumTable.Quantity,0)) as Quantity FROM 
+(Select IFNULL(Sum(IFNULL(item1Quantity,0)),0) as Quantity from ss_orders where item1Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+UNION
+Select IFNULL(Sum(IFNULL(item2Quantity,0)),0) as Quantity from ss_orders where item2Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+UNION
+Select IFNULL(Sum(IFNULL(item3Quantity,0)),0) as Quantity from ss_orders where item3Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+UNION
+Select IFNULL(Sum(IFNULL(item4Quantity,0)),0) as Quantity from ss_orders where item4Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate 
+UNION
+Select IFNULL(Sum(IFNULL(item5Quantity,0)),0) as Quantity from ss_orders where item5Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate 
+UNION
+Select IFNULL(Sum(IFNULL(item6Quantity,0)),0) as Quantity from ss_orders where item6Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate 
+UNION
+Select IFNULL(Sum(IFNULL(item7Quantity,0)),0) as Quantity from ss_orders where item7Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate
+UNION
+Select IFNULL(Sum(IFNULL(item8Quantity,0)),0) as Quantity from ss_orders where item8Sku = @sku and orderStatus  in ('shipped','awaiting_shipment','on_hold') and orderDate &gt;= @cutoffDate) sumTable;</value>
+  </data>
+  <data name="ResetPartInventoryTargetOrderCountOverrideSql" xml:space="preserve">
+    <value>UPDATE `dotnet`.`partinventorytarget`SET OrderCountOverride = 0 where PartNumber = @partNumber</value>
+  </data>
+  <data name="UpdateInvoiceSummarySql" xml:space="preserve">
+    <value>UPDATE `dotnet`.`smp_invoicesummary`
+SET 
+	StoreID = @storeID,  
+	InvoiceNumber = @invoiceNumber,
+	TransactionType = @transactionType, 
+	ErrorMsg = @errorMsg,
+	InvoiceTotal = @invoiceTotal,
+	InvoiceDate = @invoiceDate,
+	CounterPersonID = @counterPersonID,
+	SalesPersonID = @salesPersonID,
+	OtherCharges = @otherCharges,
+	NonTaxableTotal = @nonTaxableTotal,
+	TaxableTotal = @taxableTotal,
+	Tax1Total = @tax1Total,
+	Tax2Total = @tax2Total, 
+	AdjustmentTotal = @adjustmentTotal, 
+	Attention = @attention
+WHERE InvoiceSummaryId = @invoiceSummaryId;</value>
+  </data>
+  <data name="UpdateManualPurchaseOrderStatus" xml:space="preserve">
+    <value>UPDATE `dotnet`.`smp_manualpurchaseorders` SET ProcessingStatus = @processingStatus, ProcessedDate = @processedDate WHERE ManualPurchaseOrderId = @manualPurchaseOrderId</value>
+  </data>
+  <data name="UpdatePartPurchaseComments" xml:space="preserve">
+    <value>UPDATE `dotnet`.`partpurchase` SET Comments = @comments WHERE PartPurchaseId = @partPurchaseId</value>
+  </data>
+  <data name="UpdatePartPurchaseCounts" xml:space="preserve">
+    <value>UPDATE `dotnet`.`partpurchase` 
+SET 
+OrderCount = @orderCount, 
+DotNetQtyOnHand = @dotnetQtyOnHand,
+DotNetNetQtyOnHand = @dotnetNetQtyOnHand
+WHERE `PartPurchaseId` = @partPurchaseId</value>
+  </data>
+  <data name="UpdatePartPurchaseOrderStatusSql" xml:space="preserve">
+    <value>UPDATE `dotnet`.`partpurchase` SET OrderStatus = @orderStatus WHERE PartPurchaseId = @partPurchaseId</value>
+  </data>
+  <data name="UpdatePartReceivingSql" xml:space="preserve">
+    <value>UPDATE `dotnet`.`smp_partreceiving`
+SET
+	InvoiceNumber = @invoiceNumber,
+	ReportedShippedcount = @reportedShippedcount, 
+	UnitPrice = @unitPrice, 
+	Taxed = @taxed, 
+	InvoiceMsgLine = @invoiceMsgLine
+WHERE PartRecevingId = @partReceivingID;</value>
+  </data>
+  <data name="UpdatePartSkuInventoryMetricOrderingStatusByPartSql" xml:space="preserve">
+    <value>UPDATE dotnet.partskuinventorymetrics psim
+INNER JOIN dotnet.partskumaster psm ON psim.SKU = psm.SKU
+ SET psim.OrderingStatus = @orderingStatus, psim.OrderDate = LOCALTIME() 
+WHERE psm.PartNumber = @partNumber</value>
+  </data>
+  <data name="UpdatePartSkuInventoryMetricSql" xml:space="preserve">
+    <value>UPDATE `dotnet`.`partskuinventorymetrics` SET
+ActualOnHand_SKU = @actualOnHand_SKU,
+ActualOnHand_Part = @actualOnHand_Part,
+LeadTimeInDays = @leadTimeInDays,
+OnOrder_SKU = @onOrder_SKU,
+OnOrder_Part = @onOrder_Part,
+InTransit_SKU = @inTransit_SKU,
+InTransit_Part = @inTransit_Part,
+IncomingUnits_SKU = @incomingUnits_SKU,
+IncomingUnits_Part = @incomingUnits_Part,
+DaysInStock = @daysInStock,
+QuantitySoldInLastXDays_SKU = @quantitySoldInLastXDays_SKU,
+QuantitySoldInLastXDays_Part = @quantitySoldInLastXDays_Part,
+SalesVelocityInDays = @salesVelocityInDays,
+ForecastedGrowthPercentage = @forecastedGrowthPercentage,
+SalesVelocity_SKU = @salesVelocity_SKU,
+SalesVelocity_Part = @salesVelocity_Part,
+ReorderBufferInDays = @reorderBufferInDays,
+QuantityToOrder_SKU = @quantityToOrder_SKU,
+QuantityToOrder_Part = @quantityToOrder_Part,
+OrderingStatus = @orderingStatus,
+OrderDate = @orderDate,
+CalculationMethod = @calculationMethod 
+WHERE PartSkuInventoryMetricId = @partSkuInventoryMetricId;</value>
+  </data>
+</root>
